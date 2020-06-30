@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+		int i;
+		int girilen[3];
+		int ek,eb;
+	for(i=0;i<3;i++){
+		printf("lutfen bir sonraki sayiyi giriniz:");
+		scanf("%d",&girilen[i]);}
+	ek=girilen[0];
+	eb=girilen[0];
+	for(i=0;i<3;i++){
+		if(girilen[i]<ek)
+		ek=girilen[i];
+	}
+	for(i=0;i<3;i++){
+		if(girilen[i]>eb)
+		eb=girilen[i];
+	}
+	printf("en buyuk deger:%d'dir'",eb);
+	printf("\nen kucuk sayi :%d'dir",ek);
+}
